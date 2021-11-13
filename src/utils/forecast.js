@@ -14,10 +14,10 @@ const forecast = (latitude, longitude, callback) => {
       const currentTemp = body.current.temp_f;
       const feelsLike = body.current.feelslike_f;
       const desc = body.current.condition.text;
-
+      const windSpeed = body.current.wind_mph;
       callback(
         undefined,
-        `${desc}.it is currently ${currentTemp} degree farenheit out.it feels like ${feelsLike} degree fahrenheit outside`
+        `${desc}.it is currently ${currentTemp} degree farenheit out.it feels like ${feelsLike} degree fahrenheit outside.The wind speed is ${windSpeed} mph`
       );
     }
     module.exports = forecast;
