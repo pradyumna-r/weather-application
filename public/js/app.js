@@ -1,5 +1,3 @@
-console.log("this is a client side javascript file");
-
 // const weatherForecast = fetch(
 //   "http://localhost:3000/weather?address=boston"
 // ).then((response) => {
